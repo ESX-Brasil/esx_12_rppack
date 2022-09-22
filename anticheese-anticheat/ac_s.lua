@@ -953,9 +953,9 @@ end)
 local verFile = LoadResourceFile(GetCurrentResourceName(), "version.json")
 local curVersion = json.decode(verFile).version
 Citizen.CreateThread( function()
-	local updatePath = "/Blumlaut/anticheese-anticheat"
+	local updatePath = "/ESX-Brasil/esx_12_rppack/main/anticheese-anticheat"
 	local resourceName = "AntiCheese ("..GetCurrentResourceName()..")"
-	PerformHttpRequest("https://raw.githubusercontent.com"..updatePath.."/master/version.json", function(err, response, headers)
+	PerformHttpRequest("https://raw.githubusercontent.com"..updatePath.."/version.json", function(err, response, headers)
 		local data = json.decode(response)
 
 
